@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção de Animais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="cadastro" > 
+    <header>
+        <nav>
+            <div>
+                <ul class="nav-links"> 
+                    <div class="logo">Adoção Animal
+                        <img src="imagens/icon_nav.png" alt="">
+                    </div>
+                    <li><a href="main.html">Início</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="pets.html">Pets para Adoção</a></li>
+                    <li><a href="dicas.html">Dicas</a></li>
+                    <li><a href="cadastro.html">Cadastrar Pet</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="cadastro" class="cadastropet">
+        <form onsubmit="cadastrarUsuario(); return false;"> <!-- Evita o reload da página -->
+            <input type="file" id="foto" accept="image/*" required>
+            <input type="text" id="nome" placeholder="Nome do Animal" required>
+            <input type="number" id="idade" placeholder="Idade do pet" required>
+            <input type="text" id="cidade" placeholder="Cidade" required>
+            <input type="text" id="bairro" placeholder="Bairro" required>
+            <input type="text" id="tutor" placeholder="Tutor" required>
+            <input type="number" id="contato" placeholder="Contato" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <footer class="rodapé">
+        <p>&copy; 2024 Adoção Animal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

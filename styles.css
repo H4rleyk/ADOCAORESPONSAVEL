@@ -1,0 +1,302 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/background.jpg);
+    background-size: cover;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4b3832;
+    color: white;
+    padding: 10px 100px;
+    display: flex; /* Usando flexbox para alinhar o conteúdo */
+    justify-content: flex-end; /* Centraliza o conteúdo do cabeçalho */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.hero-text {
+    font-size: 40px; /* Tamanho da fonte do título */
+    position: absolute;
+    right: 40px;
+    top: 300px;
+}
+
+.logo {
+    font-size: 25px; /* Tamanho da fonte do título */
+    position: absolute; /* Permite que o logo fique fixo à esquerda */
+    left: 20px; /* Alinha o logo à esquerda */
+    line-height: 5px; /* Define a altura da área do logo */
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 23px;
+    display: flex; /* Exibe os links em linha */
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 35px; /* Espaço entre os links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d9a05b; /* Efeito de hover */
+}
+
+/* Seção Principal */
+.home {
+    padding: 150px 20px; /* Espaço para não ficar atrás do cabeçalho fixo */
+    text-align: center; /* Centraliza o texto */
+    font-size: 35px;
+    color: #4b3832; /* Cor do texto */
+    justify-content: flex-end;
+}
+
+
+
+.cadastropet {
+    max-width: 450px; /* Largura máxima do quadrado */
+    flex-direction: column; /* Alinha os elementos em coluna */
+    justify-content: center;
+    align-items: center;
+    padding: 50px; /* Espaçamento interno */
+    background-color: #AB5D2C50; /* Cor de fundo */
+    border: 2px solid #4b3832; /* Borda marrom */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+.cadastropet input {
+    width: 100%; /* Largura total dos inputs */
+    height: 25px; /* Altura dos inputs */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.cadastropet button {
+    width: 100%; /* Largura total do botão */
+    background-color: #4b3832; /* Cor marrom */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cadastropet button:hover {
+    background-color: #d9a05b; /* Cor dourada */
+}
+
+.login-box {
+    background-color: white; /* Fundo branco para a caixa */
+    padding: 30px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    width: 300px; /* Largura da caixa */
+    text-align: center; /* Centraliza o texto */
+}
+
+.login-box h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column; /* Alinha inputs em coluna */
+}
+
+.login-box input {
+    margin-bottom: 15px; /* Espaço entre inputs */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.login-box button {
+    padding: 10px; /* Espaçamento interno do botão */
+    background-color: #4b3832; /* Cor do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer ao passar o mouse */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.login-box button:hover {
+    background-color: #d9a05b; /* Cor do botão ao passar o mouse */
+}
+
+.options {
+    margin-top: 15px; /* Espaço acima das opções */
+}
+
+.options a {
+    color: #4b3832; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado */
+    display: block; /* Cada link em uma linha nova */
+    margin: 5px 0; /* Margem entre os links */
+}
+
+.options a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+.dicas {
+    background-image: url(imagens/background\ \(4\).jpg);
+    background-size: cover;
+    color: #f0f0f0;
+}
+.tips {
+    font-size: 25px;
+}
+
+
+.container {
+    font-size: 25px;
+}
+
+/* Container para os cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: center; /* Centraliza os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Estilo para cada card */
+.card {
+    background-color: white;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra do card */
+    padding: 20px;
+    width: 250px; /* Largura do card */
+    transition: transform 0.2s; /* Efeito de transição ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta levemente o card ao passar o mouse */
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0; /* Margens para o título */
+}
+
+/* Estilo para a imagem do pet */
+.pet-image {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+.card p {
+    font-size: 14px; /* Tamanho do texto da descrição */
+    color: #555; /* Cor do texto da descrição */
+}
+
+
+.cadastro {
+    background-image: url(imagens/backgroundt1.png);
+    background-size: cover
+}
+.about {
+    background-image: url(imagens/background\ \(5\).jpg);
+    background-size: cover;
+    position: fixed;
+}
+.textabout {
+    background-color: #f9f9f950 ;
+    font-size: 35px;
+    color: #4b3832;
+}
+
+/* Rodapé */
+.rodapé {
+    background-color: #3a2c28; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 8px 0; /* Espaçamento interno */
+    position: fixed; /* Fixa o rodapé na parte inferior */
+    bottom: 0; /* Posiciona na parte inferior */
+    width: 100%; /* Largura total */
+}
+
+#sugestoes {
+    position: relative; /* Para que o conteúdo fique acima do background */
+    z-index: 1; /* Certifica-se de que o conteúdo esteja acima do fundo borrado */
+    max-width: 750px; /* Largura máxima */
+    width: 100%; /* Largura total até o máximo */
+    background-color: #f9f9f950; /* Fundo claro */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 85%; /* Largura total do campo */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+button {
+    background-color: #4b3832; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+button:hover {
+    background-color: #d9a05b; /* Cor ao passar o mouse */
+}
+
+/* Estilo para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Coloca os itens em coluna em telas menores */
+        align-items: flex-start; /* Alinha itens à esquerda */
+        padding: 15px; /* Ajusta o padding */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Alinha links verticalmente em telas menores */
+        text-align: left; /* Alinha os links à esquerda */
+    }
+
+    .nav-links li {
+        margin-bottom: 10px; /* Espaço entre os links */
+    }
+
+    .container {
+        flex-direction: column; /* Coloca o conteúdo em coluna em telas menores */
+    }
+
+    .aside {
+        width: 100%; /* O aside ocupa toda a largura em telas menores */
+        margin-top: 20px; /* Espaço acima do aside */
+    }
+}
